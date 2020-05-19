@@ -1,0 +1,171 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-16T20:50:51.771Z",
+        "line": 12,
+        "name": "User Verify With Valid Login Credential",
+        "description": "",
+        "id": "acceptance-testing.;user-verify-with-valid-login-credential;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5290690700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user launch chrome browser",
+            "match": {
+              "location": "CustomerLogin.user_launch_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12182236000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters url",
+            "match": {
+              "location": "CustomerLogin.user_enters_url()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7099518500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters \"jasminejosecool@gmail.com\" and \"jasmine234\" valid credential",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"jasminejosecool@gmail.com\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"jasmine234\"",
+                  "offset": 44
+                }
+              ],
+              "location": "CustomerLogin.user_enters_and_valid_credential(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2106065500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click login button",
+            "match": {
+              "location": "CustomerLogin.user_click_login_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-16T20:51:18.486Z",
+        "line": 24,
+        "name": "User Search for a Product and Add it to Cart",
+        "description": "",
+        "id": "acceptance-testing.;user-search-for-a-product-and-add-it-to-cart;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12332128400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user click search link",
+            "match": {
+              "location": "CustomerLogin.user_click_search_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12344792900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user enter \"Jackets\" search product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Jackets\"",
+                  "offset": 11
+                }
+              ],
+              "location": "CustomerLogin.user_enter_search_product(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8913538800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user click search button",
+            "match": {
+              "location": "CustomerLogin.user_click_search_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8656018200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user select product",
+            "match": {
+              "location": "CustomerLogin.user_select_product()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6935758200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user choose size and add product to cart",
+            "match": {
+              "location": "CustomerLogin.user_choose_size_and_add_product_to_cart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2476223900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user click to view cart",
+            "match": {
+              "location": "CustomerLogin.user_click_to_view_cart()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Acceptance testing.",
+    "description": "  In order to buy the product verify that tobi page is loading and able to login and able to select a product and add it to cart",
+    "id": "acceptance-testing.",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/login.feature",
+    "tags": []
+  }
+]
